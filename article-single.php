@@ -20,7 +20,6 @@ foreach (['articleBody', 'text'] as $key) {
             $block->document->tag('div', $key);
             $block->document['wordCount'] = str_word_count($block->document[$key]);
             $block->document->meta('wordCount');
-            return true;
     }
 }
 
